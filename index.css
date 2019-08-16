@@ -1,0 +1,59 @@
+table{
+    width: 315px;
+    margin: 50px auto;
+    background-color: salmon;
+    border: none;
+    border-radius: 10px;
+    padding: 0px 20px 20px;
+}
+.heading{
+    color: white;
+    font-size: 130%;
+    text-align: center;
+}
+#input, #answer{
+    width: 260px;
+    height: 50px;
+    font-size: 210%;
+    text-align: right;
+    border: none;
+}
+
+#answer{
+    color: green;
+}
+#input {
+    border-radius: 5px 5px 0px 0px;
+    box-shadow: 2px 2px 2px black;
+    color: hsl(0, 0%, 12%);
+}
+#answer{
+    border-radius: 0px 0px 5px 5px;
+    box-shadow: 2px 2px 2px black;
+}
+#backspace{
+    color: red;
+}
+input[type=button]{
+    height: 60px;
+    width: 60px;
+    font-size:130%; 
+    color: blue;
+    background-color: white;
+    margin: 1px 2px 5px 2px;
+    border-radius: 8px;
+    border: none;
+}
+input[type=button]:hover{
+    background-color: #cbcbcb;
+    cursor: pointer;
+}
+#igual{
+    width: 127px;
+    color: white;
+    background-color: rgb(124, 202, 124);
+}
+#cee{
+    color: white;
+    background-color: rgb(155, 58, 58);
+}
