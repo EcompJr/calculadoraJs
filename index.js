@@ -2,45 +2,11 @@ var ponto = 0;
 // insert the numbers on the display
 function getNumber(num) {
     var input_var = document.getElementById('input');
-    
-    switch(num){
-        case 1:
-            input_var.value += '1';
-            break;
-        case 2:
-            input_var.value += '2';
-            break;
-        case 3:
-            input_var.value += '3';
-            break;
-        case 4:
-            input_var.value += '4';
-            break;
-        case 5:
-            input_var.value += '5';
-            break;
-        case 6:
-            input_var.value += '6';
-            break;
-        case 7:
-            input_var.value += '7';
-            break;
-        case 8:
-            input_var.value += '8';
-            break;
-        case 9:
-            input_var.value += '9';
-            break;
-        case 0:
-            input_var.value += '0';
-            break;
-        case '.':
-            if(ponto == 0){
-                input_var.value += '.';
-                ponto = 1;
-            }else{
-                break;
-            }break;
+    if(num != '.')
+        input_var.value += num.toString();
+    else if(num == '.' && ponto == 0){
+        input_var.value += '.';
+        ponto = 1;
     }
 }
 // get the mathematical operation
